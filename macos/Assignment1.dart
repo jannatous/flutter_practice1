@@ -9,27 +9,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.green,
           centerTitle: true,
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {},
-            ),
-          ],
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.add_business_outlined),
-          ), // Added a comma here
           title: Text('Home'),
-
-          bottom: PreferredSize(
-            preferredSize: Size.fromHeight(100),
-            child: SizedBox(
-              height: 100,
-            ),
-          ),
+          leading: Icon(Icons.add_business_outlined),
         ),
         body: Center(
           child: Column(
@@ -75,4 +60,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
