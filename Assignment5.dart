@@ -10,11 +10,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
+
         appBar: AppBar(
           backgroundColor: Colors.green,
           centerTitle: true,
           title: Text('Home'),
-          leading: Icon(Icons.add_business_outlined),
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {},
+            ),
+          ],
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.add_business_outlined),
+          ),
+          elevation: 70,
+          bottom: PreferredSize(
+            preferredSize: Size.fromHeight(100),
+            child: SizedBox(
+              height: 100,
+            ),
+          ),
+
+
         ),
         body: Center(
           child: Column(
@@ -22,8 +41,8 @@ class MyApp extends StatelessWidget {
             children: [
               Text('This is mod 5 Assignment',
                   style: TextStyle(
-                  fontWeight:FontWeight.bold,
-              )),
+                    fontWeight:FontWeight.bold,
+                  )),
 
               RichText(
                 text: TextSpan(

@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('This is mod 5 Assignment'),
+              fontWeight : FontWeight.bold,
               RichText(
                 text: TextSpan(
                   text: 'My ',
